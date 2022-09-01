@@ -1,0 +1,12 @@
+# Custom data for person detection
+
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: /media/py/8ee085fc-6bf0-41db-8bee-dbf383701c5c/data/抽烟打电话喝水数据集/VOCData/train
+val: /media/py/8ee085fc-6bf0-41db-8bee-dbf383701c5c/data/抽烟打电话喝水数据集/VOCData/test
+
+# number of classes
+nc: 4
+
+# class names
+names: ['1','2','3','4']

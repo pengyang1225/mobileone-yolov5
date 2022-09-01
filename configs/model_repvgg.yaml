@@ -1,0 +1,13 @@
+backbone:
+  type: repvgg
+  deploy: 0
+  version: RepVGG-A0
+  pretrained: "../weights/RepVGG-A0-train.pth"
+head:
+  type: YOLOPAFPN
+  nc: 4
+  stride: [8.0, 16.0, 32.0]
+  anchors:
+    - [10,13, 16,30, 33,23]  # P3/8
+    - [30,61, 62,45, 59,119]  # P4/16
+    - [116,90, 156,198, 373,326]  # P5/32
